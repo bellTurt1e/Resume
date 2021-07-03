@@ -1,5 +1,6 @@
 ---
-layout: "page"
+layout: page
 title: Projects
+permalink: /Projects/
 ---
-What it do fssds 
+What it do fssds
