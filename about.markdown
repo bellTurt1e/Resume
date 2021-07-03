@@ -8,5 +8,5 @@ Hello my name is Raymond I'm currently attending CSUSB for computer science. I e
 
 You can find my social media here:
 
-[Tiktok][https://www.tiktok.com/@turtlestuff?lang=en] /
+[Tiktok](https://www.tiktok.com/@turtlestuff?lang=en) /
 [Instagram](https://www.instagram.com/raymond___bell/)
