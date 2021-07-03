@@ -96,10 +96,4 @@ int binomial(int n, int k)
 
 {% endhighlight %}
 
-If the tournament goes lower however this would mean that team A either won or won all games since the won the last match. They would win because team B never could stop them from winning thus the last match had happened. 
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+If the tournament goes lower however this would mean that team A either won or won all games since the won the last match. They would win because team B never could stop them from winning thus the last match had happened.
