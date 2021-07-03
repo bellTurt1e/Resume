@@ -1,5 +1,5 @@
 ---
 layout: "page"
-title: Project
+title: Projects
 ---
-What it do
+What it do fssds 
