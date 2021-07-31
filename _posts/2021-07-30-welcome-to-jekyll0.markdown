@@ -33,8 +33,6 @@ int main() {
        cout << "Amount of skittles remaining " << skittles << endl;
    } while(skittles >= 0);
 }
-
-
 {% endhighlight %}
 
 For part A we actually dont need to program anything however we will include it. All we need to do is multiply 20 by 7 since the machine drops 7 skittles for every 20 quarters(7 * 20 = 140). Now we take that 140 skittles and subtract that from 650 giving us 510 skittles after 20 quarters are put in.
