@@ -21,33 +21,85 @@ Problem (Using C++):
 {% highlight ruby %}
 /**
 Name: Raymond Bell
-In this program
+In this program we use a do-while loop to show we will never end up with 0 skittles. The end result is -1 since we end up with 6 skittles remaining before we're close to 0.
 **/
+#include<iostream>
+using namespace std;
+
+int main() {
+    int skittles = 650, amount = 7;    
+   do {
+       skittles =  skittles - amount;
+       cout << "Amount of skittles remaining " << skittles << endl;
+   } while(skittles >= 0);
+}
+
 
 {% endhighlight %}
 
-For part A we will be using n and k in the program for n and k for binomial coefficient's. We use 4 since there's two teams it would be the first to four is the winner. After plugging in 7 and 4 we end up with 35.
+For part A we actually dont need to program anything however we will include it. All we need to do is multiply 20 by 7 since the machine drops 7 skittles for every 20 quarters(7 * 20 = 140). Now we take that 140 skittles and subtract that from 650 giving us 510 skittles after 20 quarters are put in.
 
-For part B however we need to consider how the 6th game can happen if Team A wins the very last game. Since this is the case all we need to do is subtract 1 from the total number of games since we know how one game will end. We also need to consider how many games actually need to be won so we subtract 1 from 3 since team A already won one game. Meaning n will be 6 and k will be 3.
+For part B we can actually start programming! now we can do two things to prove the same thing. We can divide 650 by 7 (650 / 7 = 92.8...) notice how we have a decimal. This decimal indicates we will never have 0 skittles. Now we can show this using division OR we can use a do-while loop to show its impossible.
 
 {% highlight ruby %}
 /**
 Name: Raymond Bell
 In this program we can change n and k in a binomial equation which is typically n! over k!
 **/
+#include<iostream>
+using namespace std;
 
+int main() {
+    int  amount = 7, i = 0;    
+   do {
+       if(i != 0)
+       {
+         amount = amount + 3;
+       }
+       i++;
+       cout << "Amount of quarters " << i <<  endl;
+       cout << "Number of skittles given " << amount << endl;
+       cout << endl;
+   } while(i <= 19);
+}
 {% endhighlight %}
 
-Finally for part C we follow the exact same process! since the tournament is only 6 games and team A won the last one we use 5 for n this time and 3 for k(since only 3 games need to be won for a win). Giving us 10 possibilities.
+Finally for the second portion we can still use a do-while loop to accomplish the same goal! Since we start off with the machine giving 7 skittles then 10 then 13 we notice how the amount goes up by 3 every time a quarter is put in. So this do-while loop adds 3 to the number of skittles dropped each time its ran through. Each time a quarter is put through the machine the program will show the amount of quarters put in so far and the number of skittles given. So the machine will give 64 skittles at 20 quarters. This is actually an Arithmetic problem can could simply be represented by the equation an = a + (n - 1)d and after plugging in the numbers given the equation turns into  7 + (20 - 1)3 = 64.  
 
 {% highlight ruby %}
 /**
 Name: Raymond Bell
 In this program we can change n and k in a binomial equation which is typically n! over k!
 **/
+#include<iostream>
+using namespace std;
 
+int main() {
+    int  amount = 4, more = 3 ,i = 0;    
+   do {
+       if(i == 0)
+       {
+           cout << "Number of skittles given " << amount << endl;
+           cout << endl;
+       }
+       if(i != 0)
+       {
+            more = more + 2;
+            amount = amount + more;
+       }
+       else {
+
+           amount = amount + more;
+       }
+
+       i++;
+       cout << "Number of skittles given " << amount << endl;
+       cout << endl;
+   } while(i <= 18);
+    cout << "The total number of skittles given at 20 quarters is: " << amount << endl;
+}
 }
 
 {% endhighlight %}
 
-If the tournament goes lower however this would mean that team A either won or won all games since the won the last match. They would win because team B never could stop them from winning thus the last match had happened.
+For the Final part of the question we actually have to add 3 to the amount changed each time a new customer comes. For example customer 1 gets 4 skittles, customer 2 gets 7, and customer 3 gets 12 notice how the amount given is rising by the previous amount gained added by 2. In the program you'll notice this amount is the integer more. More increases the amount of skittles each customer gets by itself added by two for each customer.
