@@ -19,8 +19,8 @@ Could both trolls be knights? Recall that all trolls are either always-truth-tel
 /**
 Name: Raymond Bell
 
-**/
-/******************************************************************************
+
+
 
 You stumble upon two trolls playing Stratego®. They tell you:
   Troll 1: If we are cousins, then we are both knaves.
@@ -28,7 +28,7 @@ You stumble upon two trolls playing Stratego®. They tell you:
   Troll 2: We are cousins or we are both knaves.
 
 Could both trolls be knights? Recall that all trolls are either always-truth-telling knights or always-lying knaves.
-*******************************************************************************/
+**/
 
 #include <iostream>
 #include <ostream>
