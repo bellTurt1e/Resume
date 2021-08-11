@@ -76,8 +76,7 @@ int main()
     /**
     For trolls 1's case we will use a and b vs troll 2 we will use c and d
     **/
-
     return 0;
 }
-
+{% endhighlight %}
 In this program we essentially run through the problem if an if statement that's some what like a truth table. We have two scenarios that can play out one either troll 1 is telling the truth and they're not cousins and troll 2 is lying meaning troll 2 isn't a truth telling knight. Where as in the second scenario They're both lying and both knaves which would intel that they're cousins but not knaves according to troll 1. Then troll 2 is lying since they're not cousins.  
